@@ -1,20 +1,9 @@
-[tool.poetry]
+[project]
 name = "pile-deck"
 version = "0.1.0"
-description = ""
-authors = ["Abhinav Tushar <abhinav@lepisma.xyz>"]
+description = "Writer deck"
 readme = "README.org"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-displayhatmini = "^0.0.2"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.2"
-
-[tool.poetry.scripts]
-pile-deck = "pile_deck.cli:main"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "displayhatmini>=0.0.2",
+]
